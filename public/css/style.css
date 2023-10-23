@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,300;0,8..30,400;1,8..30,200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+   font-family: 'Piazzolla', serif;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.tw{
+  font-size: large;
+  padding: 1rem;
+}
+.ml {
+    margin-left: 70% !important;
+    font-size: large;
+  }
+.wth {
+    /* width: 80% !important; */
+    height:15rem ;
+    margin: auto;
+    background-color: rgb(10, 97, 168);
+    /* border-radius: 20px; */
+
+  }
+.wth a{
+  color: #fff;
+}
+.wth a:hover{
+  color: rgb(155, 202, 241);
+}
+.white{
+  background-color: #fff !important;
+}
+/* snowflag animation */
+.fa-snowflake{
+  transition: all linear;
+  animation: rot 2s linear infinite;
+}
+@keyframes rot {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+  .check{
+    width: 90%;
+    height: 35rem;
+    margin: auto;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-around;
+  }
+  .b1{
+    width: 45%;
+    height: 25rem;
+    margin: auto;
+    padding: 50px;
+    /* border: 2px solid red; */
+  }
+  .b2{
+    width: 45%;
+    height: 25rem;
+    margin: auto;
+    /* border: 2px solid red; */
+  }
+  .blue{
+    color: rgb(41, 150, 240);
+  }
+  .chnow{
+    border: none;
+    border-radius: 10px;
+    padding: 5px 12px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    color: rgb(17, 85, 141);
+    background-color: rgba(92, 195, 221, 0.637);
+  }
+  .chnow:hover{
+    background-color: rgb(17, 85, 141);
+    color: #fff;
+  }
+  .slideimg{
+    margin-left: 30px;
+    width: 35rem;
+    height: 30rem;
+  }
+
+
+  /* weather */
+  .temp_form{
+    width:60%;
+    position: relative;
+    margin: 5rem auto;
+  }
+
+  .temp_form input[type="text"]{
+    width: 100%;
+    padding: 2rem 5rem 2rem 2rem;
+    background: rgb(17, 85, 141);
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: 1.7rem;
+    border-radius: 3rem;
+  }
+
+  ::placeholder{
+    color: azure;
+  }
+
+  .temp_form input[type="submit"]{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: none;
+    background: rgb(155, 202, 241);
+    padding: 0 3rem;
+    border-radius: 3rem;
+    color: #fff;
+    font-size: 1.6rem;
+  }
+
+  .temp_form input[type="submit"]:hover{
+    color: rgb(155, 202, 241);
+    background-color: #fff;
+  }
+
+  .tempInformation{
+    width: 50rem;
+    margin: auto;
+    min-height: 20rem;
+    background-color: rgb(1, 61, 110);
+    border-radius: 1rem;
+    padding: 1rem;
+    font-family: Roboto, sans-serif;
+  }
+
+  .top_layer{
+    width: 100%;
+    height: 20%;
+    background-color: rgb(1, 61, 110);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+
+  }
+
+  .top_layer p{
+    color: #fff;
+    font-weight: 500;
+    font-size:1.6rem ;
+    padding: 1rem;
+  }
+  
+  .main_layer{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main_layer #city_name{
+    padding: 2rem 0;
+    color: #fff;
+    font-weight: 300;
+    font-size: 2rem;
+  }
+
+  .main_layer .middle_layer{
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+  }
+
+  .main_layer .middle_layer p,
+  .main_layer .middle_layer .fa{
+    font-size: 7rem;
+    font-weight: 900;
+  }
+
+  .fa{
+    color: rgb(155, 202, 241);
+  }
+
+  sup{
+    font-size: 6rem;
+    margin-top: -2rem;
+  }
+
+  .data_hide{
+    /* visibility: hidden; */
+    transition: all 0.3s linear;
+  }
+  /* footer  */
+  #footer{
+    width: 100%;
+    height: 10rem;
+    margin-top: auto;
+    background-color:rgb(1, 61, 110);
+  }
+  .footerline{
+  text-align: center;
+  padding: 1rem;
+  color: #fff;
+  }
+  .flex{
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  .flex a{
+    color: #fff;
+    text-decoration: none;
+  }
+  .flex a:hover{
+    color: rgb(155, 202, 241);
+  }
+  .grid{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid: 2rem;
+    width: 85%;
+    margin: auto;
+    height: 50rem;
+    /* border:1px solid black; */
+  }
+  .g1{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 40rem;
+  }
+  .video{width:100%;
+    height: 35rem;
+  }
+  .g2{
+    margin-top: 10rem;
+  }
